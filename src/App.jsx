@@ -4,6 +4,7 @@ import Blogs from "./components/Blogs";
 import UserBlog from "./components/UserBlog";
 import BlogDetail from "./components/Blogs";
 import AddBlog from "./components/AddBlog";
+import EditBlog from "./components/EditBlog";
 import HomePage from "./components/HomePage";
 import { Route, Routes } from "react-router-dom";
 import Auth from "./components/Auth";
@@ -14,9 +15,6 @@ function App() {
   console.log(isLoggedIn);
   return (
     <React.Fragment>
-      <header>
-        <Header />
-      </header>
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -27,10 +25,14 @@ function App() {
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/blogs/add" element={<AddBlog />} />
               <Route path="/myBlogs" element={<UserBlog />} />
-              <Route path="/myBlogs/:id" element={<BlogDetail />} />{" "}
+              <Route path="/myBlogs/asdfasdfafd" element={<EditBlog />} />
+              <Route path="/myBlogs/:id" element={<h1>Let Us</h1>} />{" "}
             </>
           )}
         </Routes>
+        <header>
+          <Header />
+        </header>
       </main>
     </React.Fragment>
   );

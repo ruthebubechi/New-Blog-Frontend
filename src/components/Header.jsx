@@ -30,7 +30,7 @@ const Header = () => {
             <Tab LinkComponent={Link} to="#" label="Recipes" />
             <Tab LinkComponent={Link} to="#" label="Cookbook" />
             <Tab LinkComponent={Link} to="#" label="Shop" />
-            <Tab LinkComponent={Link} to="#" label="Subscribe" />
+            <Tab LinkComponent={Link} to="#" label="SHoppioe" />
           </Tabs>
         </Box>
         {isLoggedIn && (

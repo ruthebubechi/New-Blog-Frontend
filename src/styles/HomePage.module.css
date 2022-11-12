@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap"); */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -6,12 +8,14 @@
 }
 
 .subscribe__cta {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  /* font-family: "Quicksand", sans-serif; */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
 }
-.subscribe__cta__image {
-  max-width: 50%;
-}
+/* .subscribe__cta__image {
+  min-width: 50%;
+} */
 
 .subscribe__cta__image_img {
   width: 100%;
@@ -20,12 +24,33 @@
 }
 
 .subscribe__cta__form {
-  background-color: #00cfcf;
-  max-width: 50%;
-  padding: 30px 50px;
+  background-color: #b6d0b2;
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .subscribe__cta__form__text {
-  font-size: 5.3rem;
+  text-align: center;
+  font-size: 4.3rem;
   font-family: sans-serif;
+}
+
+.subscribe__cta__form__input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__cta__form__input {
+  border: 1px solid white;
+  padding: 5px 15px;
+  margin: 10px 0px;
+  font-size: 1.5rem;
+}
+
+.subscribe__cta__form__button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  width: 100%;
 }

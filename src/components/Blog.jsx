@@ -28,8 +28,9 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
       navigate(`/myBlogs/${id}`);
     } else {
       new Promise((resolve, reject) => resolve())
-        .then(() => navigate("/"))
-        .then(() => navigate("/myBlogs"));
+        // .then(() => navigate("/"))
+        // .then(() => navigate("/myBlogs"))
+        .then(() => navigate(`myBlogs/${id}`));
     }
 
     // .then(() => navigate(`/${id}`));
@@ -39,7 +40,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
 
   const deleteRequest = async () => {
     const res = await axios
-      .delete(`http://localhost:5000/api/blog/${id}`)
+      .delete(`https://ruebyscuisine.onrender.com/api/blog/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;

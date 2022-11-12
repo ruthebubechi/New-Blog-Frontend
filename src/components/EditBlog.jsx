@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const labelStyles = { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" };
-const AddBlog = () => {
+const EditBlog = () => {
   const navigate = useNavigate();
   const [inputs, setInputs] = useState({
     title: "",
@@ -98,4 +98,4 @@ const AddBlog = () => {
   );
 };
 
-export default AddBlog;
+export default EditBlog;

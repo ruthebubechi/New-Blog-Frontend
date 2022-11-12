@@ -23,6 +23,25 @@ function HomePage() {
           <h3 className={classes.subscribe__cta__form__text}>
             MOSTLY SIMPLE, ALWAYS SEASONAL
           </h3>
+          <div className={classes.subscribe__cta__form__input__container}>
+            <input
+              className={classes.subscribe__cta__form__input}
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="FIRST NAME"
+            />
+            <input
+              className={classes.subscribe__cta__form__input}
+              type="email"
+              name="email"
+              id="email"
+              placeholder="EMAIL ADDRESS"
+            />
+            <button className={classes.subscribe__cta__form__button}>
+              SUBMIT
+            </button>
+          </div>
         </div>
       </div>
     </div>
